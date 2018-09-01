@@ -1,0 +1,42 @@
+object group_recorder{
+    group  "class=meter";
+    property measured_power_A;
+    interval 3600;
+    file measured_power_A_REAL.csv;
+    complex_part REAL;
+}
+object group_recorder{
+    group  "class=meter";
+    property measured_power_A;
+    interval 3600;
+    file measured_power_A_IMAG.csv;
+    complex_part IMAG;
+}
+object group_recorder{
+    group  "class=meter";
+    property measured_power_B;
+    interval 3600;
+    file measured_power_B_REAL.csv;
+    complex_part REAL;
+}
+object group_recorder{
+    group  "class=meter";
+    property measured_power_B;
+    interval 3600;
+    file measured_power_B_IMAG.csv;
+    complex_part IMAG;
+}
+object group_recorder{
+    group  "class=meter";
+    property measured_power_C;
+    interval 3600;
+    file measured_power_C_REAL.csv;
+    complex_part REAL;
+}
+object group_recorder{
+    group  "class=meter";
+    property measured_power_C;
+    interval 3600;
+    file measured_power_C_IMAG.csv;
+    complex_part IMAG;
+}

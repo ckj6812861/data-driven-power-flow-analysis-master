@@ -1,0 +1,96 @@
+object player
+{
+         parent l675;
+         property constant_power_A;
+         file IEEE13Load_profile_1A.player;
+}
+object player
+{
+         parent l675;
+         property constant_power_B;
+         file IEEE13Load_profile_1B.player;
+}
+object player
+{
+         parent l675;
+         property constant_power_C;
+         file IEEE13Load_profile_1C.player;
+}
+object player
+{
+         parent l645;
+         property constant_power_B;
+         file IEEE13Load_profile_2B.player;
+}
+object player
+{
+         parent l6321;
+         property constant_power_A;
+         file IEEE13Load_profile_3A.player;
+}
+object player
+{
+         parent l6321;
+         property constant_power_B;
+         file IEEE13Load_profile_3B.player;
+}
+object player
+{
+         parent l6321;
+         property constant_power_C;
+         file IEEE13Load_profile_3C.player;
+}
+object player
+{
+         parent l6711;
+         property constant_power_A;
+         file IEEE13Load_profile_4A.player;
+}
+object player
+{
+         parent l6711;
+         property constant_power_B;
+         file IEEE13Load_profile_4B.player;
+}
+object player
+{
+         parent l6711;
+         property constant_power_C;
+         file IEEE13Load_profile_4C.player;
+}
+object player
+{
+         parent l634;
+         property constant_power_A;
+         file IEEE13Load_profile_5A.player;
+}
+object player
+{
+         parent l634;
+         property constant_power_B;
+         file IEEE13Load_profile_5B.player;
+}
+object player
+{
+         parent l634;
+         property constant_power_C;
+         file IEEE13Load_profile_5C.player;
+}
+object player
+{
+         parent l671;
+         property constant_power_A;
+         file IEEE13Load_profile_6A.player;
+}
+object player
+{
+         parent l671;
+         property constant_power_B;
+         file IEEE13Load_profile_6B.player;
+}
+object player
+{
+         parent l671;
+         property constant_power_C;
+         file IEEE13Load_profile_6C.player;
+}

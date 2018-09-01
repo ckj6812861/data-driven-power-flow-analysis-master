@@ -1,0 +1,125 @@
+# result format
+
+for each predicting, save the prediction results on training data and testing data. (for future ploting)
+--------------------------------------------------------------------------------------------------------
+case description:
+	datasize: 8759
+	training data : testing data = 1:1
+	test_feeder: IEEE13 with regulator on
+	with_noise&outlier: no
+	with active controller:no
+	with active load: training load and tasing load in the same range
+	with topology change: no
+	with partial observation: no
+--------------------------------------------------------------------------------------------------------
+forward mapping
+predicting P of all three phases on all buses (get the power flow equation) on training data
+  model    |  MAPE  |  r2_score  |  training_time  |  testing_time  
+ average   |
+  LSLR     |
+  PLLR     |
+  SVR	    |
+  GPR      |
+Online GPR |
+
+predicting P of all three phases on all buses (get the power flow equation) on testing data 
+  model    |  MAPE  |  r2_score  |  training_time  |  testing_time  
+ average   |
+  LSLR     | 0.0158 |  0.85      |  0.0283         |  0.00235
+  PLLR     |
+  SVR	    |
+  GPR      |
+Online GPR |
+note: LSLR=Lest Square Linear Regression; PLLR = Partial Least Linear Regression
+
+predicting Q of all three phases on all buses (get the power flow equation) on training data
+  model    |  MAPE  |  r2_score  |  training_time  |  testing_time  
+ average   |
+  LSLR     |
+  PLLR     |
+  SVR	    |
+  GPR      |
+Online GPR |
+
+predicting Q of all three phases on all buses (get the power flow equation) on testing data 
+  model    |  MAPE  |  r2_score  |  training_time  |  testing_time  
+ average   |
+  LSLR     |
+  PLLR     |
+  SVR	    |
+  GPR      |
+Online GPR |
+
+predicting P,Q of all three phases on all buses (get the power flow equation) on training data
+  model    |  MAPE  |  r2_score  |  training_time  |  testing_time  
+ average   |
+  LSLR     |
+  PLLR     |
+  SVR	    |
+  GPR      |
+Online GPR |
+
+predicting P,Q  of all three phases on all buses (get the power flow equation) on testing data 
+  model    |  MAPE  |  r2_score  |  training_time  |  testing_time  
+ average   |
+  LSLR     |
+  PLLR     |
+  SVR	    |
+  GPR      |
+Online GPR |
+
+--------------------------------------------------------------------------------------------------------
+Inverse Mapping
+predicting missing P,Q on PV bus and Reference bus (get the full test data) on training data 
+  model    |  MAPE  |  r2_score  |  training_time  |  testing_time  
+ average   |
+  LSLR     |
+  PLLR     |
+  SVR	    |
+  GPR      |
+Online GPR |
+
+predicting V,A on all buses that are missing V,A on training data
+  model    |  MAPE  |  r2_score  |  training_time  |  testing_time  
+ average   |
+  LSLR     |
+  PLLR     |
+  SVR	    |
+  GPR      |
+Online GPR |
+
+predicting missing P,Q on PV bus and Reference bus on testing data
+  model    |  MAPE  |  r2_score  |  training_time  |  testing_time  
+ average   |
+  LSLR     |
+  PLLR     |
+  SVR	    |
+  GPR      |
+Online GPR |
+predicting V,A on all buses that are missing V,A on testing data
+  model    |  MAPE  |  r2_score  |  training_time  |  testing_time  
+ average   |
+  LSLR     |
+  PLLR     |
+  SVR	    |
+  GPR      |
+Online GPR |
+predicting on testing data
+predicting V
+Time for Average fitting: 0.000186
+Time for Average predicting: 0.010924
+Average Model Mean squared error: 73.493956
+Average Model Variance score: -1.52
+Average Model Mean Percentage error: 0.003416
+predicting A
+Time for Average fitting: 0.000166
+Time for Average predicting: 0.011290
+Average Model Mean squared error: 0.000008
+Average Model Variance score: -0.26
+Average Model Mean Percentage error: 0.029564
+predicting V,A
+Time for Average fitting: 0.000302
+Time for Average predicting: 0.020295
+Average Model Mean squared error: 36.746982
+Average Model Variance score: -0.89
+Average Model Mean Percentage error: 0.016490
